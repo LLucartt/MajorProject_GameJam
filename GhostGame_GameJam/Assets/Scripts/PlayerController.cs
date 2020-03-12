@@ -40,6 +40,6 @@ public class PlayerController : MonoBehaviour{
           change.Normalize();
           myRigidbody.MovePosition(myRigidbody.position + change * speed * Time.fixedDeltaTime); //Time.fixedDeltaTime   Time.deltaTime
 
-        
+
       }
     }
