@@ -5,8 +5,8 @@ using UnityEngine;
 public class Simple2DTargetScanner : MonoBehaviour
 {
     public float scanFrequency; //in seconds
-    public float scanRadius = 5; //in world units
-    private float scanFrequencyCounter = 0; //counter for time between scans
+    public float scanRadius = 15; //in world units
+    private float scanFrequencyCounter = 5; //counter for time between scans
 
     public string[] targetTagArray; //array of tags of GameObjects to include
 
