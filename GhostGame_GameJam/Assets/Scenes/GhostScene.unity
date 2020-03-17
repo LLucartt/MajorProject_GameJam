@@ -333,6 +333,8 @@ GameObject:
   - component: {fileID: 630855692}
   - component: {fileID: 630855694}
   - component: {fileID: 630855695}
+  - component: {fileID: 630855696}
+  - component: {fileID: 630855697}
   m_Layer: 0
   m_Name: Ghost2
   m_TagString: Untagged
@@ -456,6 +458,43 @@ MonoBehaviour:
   - 
   editorCircleColor: {r: 1, g: 0, b: 0.7606497, a: 1}
   scannerEnabled: 1
+--- !u!114 &630855696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630855691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43927172502ce7a478dd3c00b16f63a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 630855697}
+  speed: 1
+  accelerationTime: 2
+  maxSpeed: 5
+--- !u!50 &630855697
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630855691}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1045603981
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +680,8 @@ GameObject:
   - component: {fileID: 2022359696}
   - component: {fileID: 2022359695}
   - component: {fileID: 2022359697}
+  - component: {fileID: 2022359698}
+  - component: {fileID: 2022359699}
   m_Layer: 0
   m_Name: Ghost1
   m_TagString: Untagged
@@ -737,3 +778,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 4}
   m_EdgeRadius: 0
+--- !u!114 &2022359698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022359694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43927172502ce7a478dd3c00b16f63a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2022359699}
+  speed: 1
+  accelerationTime: 2
+  maxSpeed: 5
+--- !u!50 &2022359699
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022359694}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
